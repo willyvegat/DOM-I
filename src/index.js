@@ -86,3 +86,11 @@ paraBottom[2].textContent = siteContent["main-content"]["vision-content"];
 // CTA
 document.querySelector('.cta h1').textContent = siteContent.cta.h1;
 document.querySelector('.cta button').textContent = siteContent.cta.button;
+
+// Nav Links
+const navLinks = document.querySelectorAll("nav a")
+const navLinkTexts = Object.values(siteContent.nav);
+navLinks.forEach((link, idx) => {
+  link.textContent = navLinkTexts[idx];
+  link.classList.add("italic");
+})
