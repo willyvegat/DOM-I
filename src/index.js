@@ -82,3 +82,7 @@ const paraBottom = bottomContent.querySelectorAll('p');
 paraBottom[0].textContent = siteContent["main-content"]["services-content"];
 paraBottom[1].textContent = siteContent["main-content"]["product-content"];
 paraBottom[2].textContent = siteContent["main-content"]["vision-content"];
+
+// CTA
+document.querySelector('.cta h1').textContent = siteContent.cta.h1;
+document.querySelector('.cta button').textContent = siteContent.cta.button;
